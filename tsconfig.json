@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "target": "es5",
+    //기본경로 설정
+    "baseUrl": "./src",
     "lib": [
       "dom",
       "dom.iterable",
