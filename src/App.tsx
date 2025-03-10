@@ -1,15 +1,17 @@
 import React from 'react';
-import './App.css';
-import data from 'mocks/latest-board-list.mock';
 import latestBoardListMock from 'mocks/latest-board-list.mock';
 import Top3Item from 'components/top3item';
-import { top3BoardListMock } from 'mocks';
+import CommentItem from 'components/CommentItem';
+import FavoriteItem from 'components/favoriteItem';
+import { commentListMock, favoriteListMock, top3BoardListMock } from 'mocks';
+import './App.css';
 
 function App() {
   return (
   <>
-    <div style={{display : 'flex', justifyContent:'center', gap : '24px'}}>
-      {top3BoardListMock.map(top3ListItem => <Top3Item top3Listitem={top3ListItem}/>)}
+    <div style={{display:'flex', flexDirection:'column', columnGap:'30px', rowGap:'20px'}}>
+      {favoriteListMock.map(favoriteListMock => <FavoriteItem favoriteListItem={favoriteListMock}/>)}
+      
     </div>
   </>
   );
