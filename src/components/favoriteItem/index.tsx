@@ -9,7 +9,7 @@ interface Props{
 //                  conponent : Favorit List Item 컴포넌트                  //
 export default function FavoriteItem({favoriteListItem} : Props) {
 
-   //           properties              //
+   //           state : properties              //
     const {profileImage, nickname, email} = favoriteListItem;
     //              render : Favorit List Item 렌더링
   return (

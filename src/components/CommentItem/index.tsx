@@ -8,7 +8,7 @@ interface Props{
 //                  conponent : comment list item 컴포넌트                      //
 export default function CommentItem({commentListItem} : Props) {
 
-    //      properties
+    //      state :  properties
     const {nickname, profileImage, writeDatetime, content} = commentListItem;
 
 
