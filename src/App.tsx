@@ -5,13 +5,14 @@ import CommentItem from 'components/CommentItem';
 import FavoriteItem from 'components/favoriteItem';
 import { commentListMock, favoriteListMock, top3BoardListMock } from 'mocks';
 import './App.css';
+import InputBox from 'components/inputBox';
 
 function App() {
   return (
   <>
     <div style={{display:'flex', flexDirection:'column', columnGap:'30px', rowGap:'20px'}}>
-      {favoriteListMock.map(favoriteListMock => <FavoriteItem favoriteListItem={favoriteListMock}/>)}
       
+      <InputBox />
     </div>
   </>
   );
