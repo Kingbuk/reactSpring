@@ -3,7 +3,7 @@ import './style.css';
 
 
 //                 component : 푸터 레이아웃            //
-export default function index() {
+export default function Footer() {
 
     //          event handler : 인스타 아이콘 버튼 클릭 이벤트 처리         //
     const onInstaIconButtonClickHandler = ()=>{
